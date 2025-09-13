@@ -18,6 +18,10 @@ def home():
 def about():
     return "Web Service in Microservices Demo"
 
+@app.route('/newroute')
+def newroute():
+	return "Hello NewRoute!"
+
 if __name__ == "__main__":
    app.run(host='0.0.0.0', port=5000)
 
